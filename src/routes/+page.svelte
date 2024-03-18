@@ -1,11 +1,13 @@
 <script>
   import Home from "./sections/Home/Home.svelte";
   import Portfolio from "./sections/Portfolio/Portfolio.svelte";
+  import CTA from "./sections/CTA/CTA.svelte";
 </script>
 
 <section id="home" class="home">
   <Home/>
   <Portfolio/>
+  <CTA/>
 </section>
 
 <style>

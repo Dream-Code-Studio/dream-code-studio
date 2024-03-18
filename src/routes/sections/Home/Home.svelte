@@ -1,6 +1,6 @@
 <script>
-    import Background from "./Background.svelte";
-    import Button from "../../components/Button.svelte";
+  import Background from "./Background.svelte";
+  import Button from "../../components/Button.svelte";
 </script>
 
 <div class="content">
