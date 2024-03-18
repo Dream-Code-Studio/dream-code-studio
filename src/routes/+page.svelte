@@ -6,16 +6,20 @@
 
 <section id="home" class="home">
   <Home/>
+</section>
+<section id="portfolio" class="home">
   <Portfolio/>
+</section>
+<section id="cta" class="home">
   <CTA/>
 </section>
+
 
 <style>
   :global(body) {
     background-color: rgba(3, 0, 9, 1);
   }
   .home {
-    height: 100vh;
     margin-top: 120px;
   }
   

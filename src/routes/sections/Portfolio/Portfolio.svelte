@@ -35,7 +35,7 @@
 
 <style>
   .portfolio {
-    margin-top: 120px;
+    margin-top: 180px;
   }
   .title {
     font-family: 'Satoshi-Bold';

@@ -1,5 +1,10 @@
 <script>
-  const navbar = ["Home", "Projects", "Services", "Contact"];
+  const navbar = [
+    { title: "Home", link: "#home" },
+    { title: "Projects", link: "#portfolio" },
+    { title: "Services", link: "#cta" },
+    { title: "Contact", link: "#contact" },
+  ];
   let navIndex = 0;
   let gap = 12;
   function handleClick(index) {
@@ -10,8 +15,9 @@
 
 <nav class="navbar" style:--gap={gap} style:--index={navIndex}>
   <div class="links">
-    {#each navbar as item, index}
-      <a class="link" on:click={() => handleClick(index)}>{item}</a>
+    {#each navbar as { title, link }, index}
+      <a class="link" on:click={() => handleClick(index)} href={link}>{title}</a
+      >
     {/each}
     <div class="light"></div>
     <div class="active-link">Home</div>
@@ -44,6 +50,7 @@
     padding: 12px;
     width: 80px;
     z-index: 2;
+    text-decoration: none;
   }
 
   .active-link {
@@ -61,6 +68,7 @@
     transform: translate(calc(var(--index) * (100% + var(--gap) * 1px)), 0);
     transition: 0.6s all ease-in-out;
     width: 80px;
+    z-index: inherit;
   }
 
   .light {

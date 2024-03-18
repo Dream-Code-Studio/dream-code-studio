@@ -16,10 +16,10 @@
   .cta-section {
     position: relative;
     text-align: center;
-    padding: 100px 0;
     line-height: 72px;
   }
   .content {
+    z-index: 1;
     position: absolute;
     top: 50%;
     left: 50%;
