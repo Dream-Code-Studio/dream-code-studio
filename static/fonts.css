@@ -14,3 +14,11 @@
       url("/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Black.woff")
       format("woff"); /* Older Browsers */
 }
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.woff2")
+      format("woff2"),
+    /* Modern Browsers */
+      url("/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.woff")
+      format("woff"); /* Older Browsers */
+}
