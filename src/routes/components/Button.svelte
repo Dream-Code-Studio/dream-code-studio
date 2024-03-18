@@ -12,9 +12,10 @@
     outline: none;
     min-width: 140px;
     background-color: #E8B7FF;
-    padding: 12px;
     margin: 4px;
+    padding: 24px;
     border-radius: 100px;
-    font-size: 18px;
+    font-family: sans-serif;
+    font-size: 16px;
   }
 </style>

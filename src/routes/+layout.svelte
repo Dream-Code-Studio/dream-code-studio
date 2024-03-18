@@ -20,12 +20,13 @@
     position: relative;
   }
   .header {
-    position: absolute;
+    position: sticky;
     margin: auto;
     top: 0;
     left: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     margin: 20px;
   }

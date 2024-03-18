@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.woff2")
+      format("woff2"),
+    /* Modern Browsers */
+      url("/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.woff")
+      format("woff"); /* Older Browsers */
+}
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Black.woff2")
+      format("woff2"),
+    /* Modern Browsers */
+      url("/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Black.woff")
+      format("woff"); /* Older Browsers */
+}
