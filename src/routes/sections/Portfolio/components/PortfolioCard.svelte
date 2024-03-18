@@ -1,9 +1,10 @@
 <script>
   export let title;
   export let highlight;
+  export let src;
 </script>
 
-<div class="card">
+<div class="card" style:background-image={`url(${src})`} style:background-size={'cover'}>
   <div class="title">{title}</div>
   <div class="info">
     {#each highlight as item}

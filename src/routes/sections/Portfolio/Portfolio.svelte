@@ -4,18 +4,22 @@
     {
       title: "Interiorlicious",
       highlight: ["React", "Svelte", "Vue"],
+      src: '/Card1.png'
     },
     {
       title: "Portfolio",
       highlight: ["React", "Svelte", "Vue"],
+      src: '/Card2.png'
     },
     {
       title: "E-commerce",
       highlight: ["React", "Svelte", "Vue"],
+      src: '/Card3.png'
     },
     {
       title: "Portfolio",
       highlight: ["React", "Svelte", "Vue"],
+      src: '/Card4.png'
     },
   ];
 </script>
@@ -24,7 +28,7 @@
   <div class="title">Portfolio</div>
   <div class="cards">
     {#each cards as card}
-    <PortfolioCard title={card.title} highlight={card.highlight} />
+    <PortfolioCard title={card.title} highlight={card.highlight} src={card.src} />
   {/each}
   </div>
 </div>
