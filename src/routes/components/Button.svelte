@@ -13,7 +13,7 @@
     min-width: 140px;
     background-color: #E8B7FF;
     margin: 4px;
-    padding: 24px;
+    padding: 20px 24px;
     border-radius: 100px;
     font-family: sans-serif;
     font-size: 16px;

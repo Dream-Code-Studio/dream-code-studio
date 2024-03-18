@@ -22,12 +22,11 @@
   .header {
     position: sticky;
     margin: auto;
-    top: 0;
+    top: 32px;
     left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 20px;
   }
 </style>
