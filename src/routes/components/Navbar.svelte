@@ -75,7 +75,7 @@
       calc(var(--index) * (100% + 24px + var(--gap) * 1px)),
       0
     );
-    transition: 0.6s all ease-in-out;
+    transition: 0.6s transform ease-in-out;
     width: 80px;
   }
 </style>
