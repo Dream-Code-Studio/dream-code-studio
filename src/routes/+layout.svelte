@@ -13,12 +13,14 @@
   })
 </script>
 
-<div class="wrapper">
-  <header class={`header ${scrolled && 'scrolled'}`}>
+<div class={`header-wrapper ${scrolled && 'scrolled'}`}>
+  <header class="header">
     <Logo />
     <Navbar />
     <Button text="Hire Us" />
   </header>
+</div>
+<div class="wrapper">
   <slot />
 </div>
 
@@ -29,17 +31,24 @@
     position: relative;
   }
   .scrolled  {
-    background-color: white;
+    backdrop-filter: blur(12px);
+    /* background-color: white; */
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+  }
+  .header-wrapper {
+    position: relative;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
   }
   .header {
-    position: sticky;
+    max-width: 1200px;
     margin: auto;
-    top: 32px;
-    left: 0;
+    padding-block: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    z-index: 2;
   }
 </style>
