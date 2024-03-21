@@ -15,6 +15,7 @@
   <Button text="Contact Us" />
 </div>
 <div class="background"><Background /></div>
+<img class="ribbons" src="/Ribbons.png" alt="">
 
 <style>
   .content {
@@ -40,5 +41,8 @@
     left: 0;
     width: 100px;
     z-index: -1;
+  }
+  .ribbons {
+    width: 100%;
   }
 </style>
