@@ -2,10 +2,19 @@
   import Navbar from "./components/Navbar.svelte";
   import Logo from "./components/Logo.svelte";
   import Button from "./components/Button.svelte";
+  import { onMount } from "svelte";
+
+  let scrolled = false;
+
+  onMount(()=> {
+    window.addEventListener('scroll', ()=> {
+      scrolled = window.scrollY > 0 ? true : false;
+    })
+  })
 </script>
 
 <div class="wrapper">
-  <header class="header">
+  <header class={`header ${scrolled && 'scrolled'}`}>
     <Logo />
     <Navbar />
     <Button text="Hire Us" />
@@ -18,6 +27,9 @@
     max-width: 1200px;
     margin: auto;
     position: relative;
+  }
+  .scrolled  {
+    background-color: white;
   }
   .header {
     position: sticky;
