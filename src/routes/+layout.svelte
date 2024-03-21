@@ -28,5 +28,6 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    z-index: 2;
   }
 </style>
