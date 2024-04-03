@@ -24,7 +24,7 @@
     background-color: rgba(3, 0, 9, 1);
   }
   .home {
-    margin-top: 120px;
+    margin-top: 80px;
   }
   
 </style>

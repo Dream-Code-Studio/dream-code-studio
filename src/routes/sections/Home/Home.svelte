@@ -42,7 +42,7 @@
     font-size: 16px;
     color: #b4b4b4;
     font-family: "Satoshi-Regular";
-    width: 300px;
+    width: 400px;
     margin: auto;
     margin-bottom: 28px;
   }
@@ -51,6 +51,6 @@
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    padding-block: 60px;
+    padding-bottom: 60px;
   }
 </style>

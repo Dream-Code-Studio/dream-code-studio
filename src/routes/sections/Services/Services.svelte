@@ -17,6 +17,7 @@
     position: relative;
     text-align: center;
     line-height: 72px;
+    padding-block: 80px;
   }
   .content {
     z-index: 1;

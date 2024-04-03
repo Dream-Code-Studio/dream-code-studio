@@ -15,7 +15,7 @@
     margin: 4px;
     padding: 20px 24px;
     border-radius: 100px;
-    font-family: sans-serif;
     font-size: 16px;
+    font-family: "Satoshi-Bold";
   }
 </style>
