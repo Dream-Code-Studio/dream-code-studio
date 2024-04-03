@@ -3,23 +3,34 @@
   import Button from "../../components/Button.svelte";
 </script>
 
-<div class="content">
-  <div class="title">
-    Coding Creativity
-    <br />
-    Into Reality
+<div class="home">
+  <div class="content">
+    <div class="title">
+      Coding Creativity
+      <br />
+      Into Reality
+    </div>
+    <div class="subtitle">
+      We make all of your digital dreams a reality lorem ipsum dolor sit amet
+    </div>
+    <Button text="Contact Us" />
   </div>
-  <div class="subtitle">
-    We make all of your digital dreams a reality lorem ipsum dolor sit amet
-  </div>
-  <Button text="Contact Us" />
+  <Background />
 </div>
-<div class="background"><Background /></div>
 <img class="ribbons" src="/Ribbons.png" alt="">
 
 <style>
+  .home {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+  }
   .content {
     text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .title {
     font-size: 68px;
@@ -35,14 +46,11 @@
     margin: auto;
     margin-bottom: 28px;
   }
-  .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    z-index: -1;
-  }
   .ribbons {
+    display: block;
     width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding-block: 60px;
   }
 </style>

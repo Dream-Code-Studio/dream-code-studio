@@ -2,7 +2,7 @@
   const navbar = [
     { title: "Home", link: "#home" },
     { title: "Projects", link: "#portfolio" },
-    { title: "Services", link: "#cta" },
+    { title: "Services", link: "#services" },
     { title: "Contact", link: "#contact" },
   ];
   let navIndex = 0;
