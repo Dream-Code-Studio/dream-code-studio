@@ -4,22 +4,22 @@
     {
       title: "Interiorlicious",
       highlight: ["React", "Svelte", "Vue"],
-      src: '/Card1.png'
+      src: "/Card1.png",
     },
     {
       title: "Portfolio",
       highlight: ["React", "Svelte", "Vue"],
-      src: '/Card2.png'
+      src: "/Card2.png",
     },
     {
       title: "E-commerce",
       highlight: ["React", "Svelte", "Vue"],
-      src: '/Card3.png'
+      src: "/Card3.png",
     },
     {
       title: "Portfolio",
       highlight: ["React", "Svelte", "Vue"],
-      src: '/Card4.png'
+      src: "/Card4.png",
     },
   ];
 </script>
@@ -28,17 +28,22 @@
   <div class="title">Portfolio</div>
   <div class="cards">
     {#each cards as card}
-    <PortfolioCard title={card.title} highlight={card.highlight} src={card.src} />
-  {/each}
+      <PortfolioCard
+        title={card.title}
+        highlight={card.highlight}
+        src={card.src}
+      />
+    {/each}
   </div>
 </div>
 
 <style>
   .portfolio {
-    margin-top: 180px;
+    max-width: 1200px;
+    margin: auto;
   }
   .title {
-    font-family: 'Satoshi-Bold';
+    font-family: "Satoshi-Bold";
     font-size: 48px;
     text-align: center;
     color: white;
