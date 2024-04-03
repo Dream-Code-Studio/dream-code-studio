@@ -14,12 +14,13 @@
   .list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 24px;
   }
   .title {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-size: 24px;
+    color: #F9EDFF;
   }
   .item {
     list-style: none;

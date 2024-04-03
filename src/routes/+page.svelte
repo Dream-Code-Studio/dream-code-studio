@@ -1,7 +1,7 @@
 <script>
   import Home from "./sections/Home/Home.svelte";
   import Portfolio from "./sections/Portfolio/Portfolio.svelte";
-  import CTA from "./sections/CTA/CTA.svelte";
+  import Services from "./sections/Services/Services.svelte";
   import Footer from "./sections/Footer/Footer.svelte";
 </script>
 
@@ -11,8 +11,8 @@
 <section id="portfolio" class="portfolio">
   <Portfolio/>
 </section>
-<section id="cta" class="cta">
-  <CTA/>
+<section id="services" class="services">
+  <Services/>
 </section>
 <section id="footer" class="footer">
   <Footer/>

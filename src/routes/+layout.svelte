@@ -6,23 +6,21 @@
 
   let scrolled = false;
 
-  onMount(()=> {
-    window.addEventListener('scroll', ()=> {
+  onMount(() => {
+    window.addEventListener("scroll", () => {
       scrolled = window.scrollY > 0 ? true : false;
-    })
-  })
+    });
+  });
 </script>
 
-<div class={`header-wrapper ${scrolled && 'scrolled'}`}>
+<div class={`header-wrapper ${scrolled && "scrolled"}`}>
   <header class="header">
     <Logo />
     <Navbar />
     <Button text="Hire Us" />
   </header>
 </div>
-<div class="wrapper">
-  <slot />
-</div>
+<slot />
 
 <style>
   .wrapper {
@@ -30,7 +28,7 @@
     margin: auto;
     position: relative;
   }
-  .scrolled  {
+  .scrolled {
     backdrop-filter: blur(12px);
     /* background-color: white; */
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
