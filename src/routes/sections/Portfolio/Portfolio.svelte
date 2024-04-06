@@ -40,6 +40,7 @@
 <style>
   .portfolio {
     max-width: 1200px;
+    width: 90%;
     margin: auto;
   }
   .title {
@@ -53,5 +54,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
+  }
+  @media (width < 900px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
   }
 </style>

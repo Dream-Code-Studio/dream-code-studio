@@ -31,6 +31,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
+    background-position: center;
     top: 0;
     left: 0;
     z-index: -1;
@@ -60,5 +61,21 @@
     font-family: "Satoshi-Regular";
     font-size: 20px;
     color: #f6e3ff;
+  }
+  @media (width < 1100px) {
+    .title {
+      font-size: 40px;
+    }
+  }
+  @media (width < 400px) {
+    .title {
+      font-size: 32px;
+    }
+    .card {
+      padding: 32px;
+    }
+    .info {
+      font-size: 16px;
+    }
   }
 </style>
