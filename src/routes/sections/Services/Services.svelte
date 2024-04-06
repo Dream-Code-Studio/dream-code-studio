@@ -6,7 +6,10 @@
 <div class="services-section">
   <div class="content">
     <div class="small-text">GET IN TOUCH</div>
-    <div class="text">LET’S GET <br /><span class="outline">STARTED</span></div>
+    <div class="big-text">
+      <div class="text">LET’S GET</div>
+      <div class="outline">STARTED</div>
+    </div>
     <Button text="Contact Us" />
   </div>
   <Background />
@@ -18,6 +21,7 @@
     text-align: center;
     line-height: 72px;
     padding-block: 80px;
+    width: 90%;
   }
   .content {
     z-index: 1;
@@ -25,17 +29,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
   }
   .small-text {
     font-size: 16px;
     color: #f2d6ff;
     font-family: "Satoshi-Regular";
   }
-  .text {
+  .big-text {
     font-size: 68px;
-    color: #f9edff;
     font-family: "Satoshi-Black";
     margin-bottom: 28px;
+  }
+  .text {
+    color: #f9edff;
   }
   .outline {
     color: black;
@@ -44,5 +51,19 @@
       1px -1px 0 #d164d3,
       -1px 1px 0 #d164d3,
       1px 1px 0 #d164d3;
+  }
+  @media (width < 700px) {
+    .big-text {
+      font-size: 52px;
+    }
+  }
+  @media (width < 550px) {
+    .small-text {
+      font: 12px;
+    }
+    .big-text {
+      font-size: 40px;
+      line-height: 52px;
+    }
   }
 </style>
