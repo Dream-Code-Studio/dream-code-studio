@@ -15,22 +15,27 @@
     </div>
     <Button text="Contact Us" />
   </div>
-  <Background />
+  <div class="background">
+    <Background />
+  </div>
 </div>
-<img class="ribbons" src="/Ribbons.png" alt="">
+<img class="ribbons" src="/Ribbons.png" alt="" />
 
 <style>
   .home {
     max-width: 1200px;
+    width: 90%;
+    height: 600px;
     margin: auto;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .content {
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+    width: 100%;
   }
   .title {
     font-size: 68px;
@@ -52,5 +57,42 @@
     max-width: 1200px;
     margin: auto;
     padding-bottom: 60px;
+  }
+  .background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  @media (width < 1100px) {
+    .home {
+      height: 500px;
+    }
+  }
+  @media (width < 800px) {
+    .home {
+      height: 400px;
+    }
+    .title {
+      font-size: 52px;
+    }
+    .subtitle {
+      width: 300px;
+    }
+  }
+  @media (width < 500px) {
+    .home {
+      height: auto;
+    }
+    .title {
+      font-size: 40px;
+    }
+    .subtitle {
+      width: 250px;
+      font-size: 14px;
+    }
   }
 </style>

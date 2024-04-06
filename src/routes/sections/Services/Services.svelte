@@ -22,6 +22,7 @@
     line-height: 72px;
     padding-block: 80px;
     width: 90%;
+    margin: auto;
   }
   .content {
     z-index: 1;
