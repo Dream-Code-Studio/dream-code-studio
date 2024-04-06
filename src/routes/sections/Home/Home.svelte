@@ -19,7 +19,9 @@
     <Background />
   </div>
 </div>
-<img class="ribbons" src="/Ribbons.png" alt="" />
+<div class="img">
+  <img class="ribbons" src="/Ribbons.png" alt="" />
+</div>
 
 <style>
   .home {
@@ -67,6 +69,12 @@
     height: 100%;
     z-index: -1;
   }
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
   @media (width < 1100px) {
     .home {
       height: 500px;
@@ -85,7 +93,7 @@
   }
   @media (width < 500px) {
     .home {
-      height: auto;
+      height: 300px;
     }
     .title {
       font-size: 40px;
@@ -93,6 +101,16 @@
     .subtitle {
       width: 250px;
       font-size: 14px;
+    }
+  }
+  @media (width < 400px) {
+    .ribbons {
+      width: 600px;
+    }
+  }
+  @media (width < 400px) {
+    .home {
+      height: 350px;
     }
   }
 </style>

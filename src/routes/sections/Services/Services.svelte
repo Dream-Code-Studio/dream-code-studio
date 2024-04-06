@@ -23,6 +23,7 @@
     padding-block: 80px;
     width: 90%;
     margin: auto;
+    max-width: 1200px;
   }
   .content {
     z-index: 1;
