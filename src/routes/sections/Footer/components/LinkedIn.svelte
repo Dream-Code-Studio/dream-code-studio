@@ -1,7 +1,7 @@
 <svg
   fill="#F6E2FF"
-  height="40px"
-  width="40px"
+  height="100%"
+  width="100%"
   version="1.1"
   id="Icons"
   xmlns="http://www.w3.org/2000/svg"

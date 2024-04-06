@@ -25,7 +25,9 @@
     </div>
     <div class="divider"></div>
     <div class="lower-section">
-      <div class="copyright">© 2024 DreamCodeStudios. All rights reserved.</div>
+      <div class="copyright">
+        © 2024 DreamCodeStudios. All rights reserved.
+      </div>
       <div class="links">
         <div class="link"><Facebook /></div>
         <div class="link"><Twitter /></div>
@@ -50,18 +52,19 @@
     gap: 20px;
   }
   .upper-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 80px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
   .divider {
-    width: 100%;
+    width: 90%;
     height: 2px;
-    background-color: #432C4E;
+    background-color: #432c4e;
+    margin: auto;
   }
-  .list,
   .logo {
-    flex: 1;
+    text-align: center;
   }
   .lower-section {
     display: flex;
@@ -75,5 +78,45 @@
   .links {
     display: flex;
     gap: 20px;
+  }
+  .link {
+    width: 40px;
+    height: 40px;
+  }
+  @media (width < 800px) {
+    .copyright {
+      font-size: 20px;
+    }
+    .link {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  @media (width < 700px) {
+    .copyright {
+      font-size: 16px;
+    }
+    .lower-section {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+  @media (width < 650px) {
+    .upper-section {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 40px;
+      padding-bottom: 40px;
+    }
+    .logo {
+      grid-column: 1 / span 3;
+    }
+  }
+  @media (width < 400px) {
+    .upper-section {
+      grid-template-columns: 1fr;
+    }
+    .logo {
+      grid-column: span 1;
+    }
   }
 </style>

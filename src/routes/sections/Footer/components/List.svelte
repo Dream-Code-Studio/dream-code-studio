@@ -14,6 +14,7 @@
   .list {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 24px;
   }
   .title {
@@ -26,5 +27,18 @@
     list-style: none;
     font-family: 'Satoshi-Regular';
     font-size: 20px;
+  }
+  @media (width < 650px) {
+    .list {
+      gap: 8px;
+    }
+  }
+  @media (width < 500px) {
+    .title {
+      font-size: 20px;
+    }
+    .item {
+      font-size: 16px;
+    }
   }
 </style>
